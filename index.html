@@ -29,7 +29,9 @@
             <p class="tip" v-else>别急，加载呢</p>
         </div>
     </main>
-    <footer class="py-12 text-center px-4 md:px-0" v-pre>© 2020 Benjamin. All Rights Reserved.</footer>
+    <footer>
+        <p class="center-text">© 2020 Banjamin. All Rights Reserved.<br>This site is affiliated with <a href="https://yyl125.top/" target="_blank">Benjamin's Blog</a>.</p>
+    </footer>
 </body>
 <script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.5.3/dist/av-min.js"></script>
@@ -142,7 +144,8 @@
     }
     
     #app,
-    header {
+    header,
+    footer {
         box-sizing: border-box;
         width: 100%;
         max-width: 500px;
@@ -152,6 +155,11 @@
     
     h1 {
         font-weight: 900;
+    }
+    
+    footer {
+        font-size: 0.8rem;
+        clear: both;
     }
     
     .tip {
