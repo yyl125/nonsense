@@ -124,6 +124,21 @@
         }
     }
     
+    a:not([class]) {
+        border-bottom-style: solid;
+        border-bottom-width: 0.2rem;
+        color: rgb(15, 97, 255);
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        border-color: rgba(15, 97, 255, 0.1);
+        &:hover {
+            border-color: rgba(15, 97, 255, 0.5);
+        }
+        @media (prefers-color-scheme: dark) {
+            color: #81a5f8;
+        }
+    }
+    
     [v-cloak] {
         display: none;
     }
