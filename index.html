@@ -11,12 +11,12 @@
 
 <body>
     <header id="header">
-        <h1>Benjamin 的废话胶囊</h1>
+        <h1>Benjamin's Nonsense</h1>
     </header>
     <main id="app">
         <aside>
             <p id="describe">
-                👨‍🎓学生｜💡消费电子爱好者
+                👨‍🎓 学生｜💡 消费电子爱好者
             </p>
         </aside>
         <p class="tip">现在总共说了 {{count}} 条废话</p>
@@ -72,7 +72,7 @@
     function getData(page = 0) {
         query.descending('createdAt').skip(page * 20).limit(20).find().then(function(results) {
             if (results.length == 0) {
-                alert('这真的是最后一滴了～')
+                alert('这真的是最后一条了～')
             } else {
                 let resC = results;
                 reqData = false;
@@ -127,14 +127,18 @@
     a:not([class]) {
         border-bottom-style: solid;
         border-bottom-width: 0.2rem;
-        color: rgb(15, 97, 255);
+        color: #0f61ff;
         text-decoration: none;
         transition: all 0.3s ease 0s;
         border-color: rgba(15, 97, 255, 0.1);
-        &:hover {
-            border-color: rgba(15, 97, 255, 0.5);
-        }
-        @media (prefers-color-scheme: dark) {
+    }
+    
+    a:not([class]):hover {
+        border-color: rgba(15, 97, 255, 0.5);
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        a:not([class]) {
             color: #81a5f8;
         }
     }
