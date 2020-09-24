@@ -16,7 +16,7 @@
     <main id="app">
         <aside>
             <p id="describe">
-                不吐不快
+                👨‍🎓 学生｜💡 消费电子爱好者
             </p>
         </aside>
         <p class="tip">现在总共说了 {{count}} 条快言快语</p>
@@ -25,7 +25,7 @@
             <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
         </section>
         <div class="load-ctn">
-            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>再翻翻</button>
+            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>再看看</button>
             <p class="tip" v-else>别急，加载呢</p>
         </div>
     </main>
