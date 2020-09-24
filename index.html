@@ -18,8 +18,11 @@
             <p id="describe">
                 👨‍🎓 学生｜💡 消费电子爱好者
             </p>
+            <p>
+                不吐不快
+            </p>
         </aside>
-        <p class="tip">现在总共说了 {{count}} 条废话</p>
+        <p class="tip">现在总共说了 {{count}} 条快言快语</p>
         <section class="item" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
             <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
