@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="https://yyl125.top/nonsense/favicon.ico">
     <link type="text/css" rel="stylesheet" href="https://at.alicdn.com/t/font_1755564_z4mhxbw13mq.css"></link>
     <link href="https://fonts.loli.net/css?family=Noto+Serif+SC:200,300,900&display=swap&subset=chinese-simplified" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 </head>
 
@@ -22,7 +23,7 @@
         <p class="tip">现在总共说了 {{count}} 条快言快语</p>
         <section class="item" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
-            <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
+            <i class="ri-time-line"></i><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
         </section>
         <div class="load-ctn">
             <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>再看看</button>
