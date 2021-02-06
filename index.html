@@ -23,11 +23,11 @@
         <p class="tip">现在总共说了 {{count}} 条快言快语</p>
         <section class="item" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
-            <i class="ri-time-line"></i><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
+            <i class="ri-time-line"></i> <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
         </section>
         <div class="load-ctn">
-            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>再看看</button>
-            <p class="tip" v-else>别急，加载呢</p>
+            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>加载更多</button>
+            <p class="tip" v-else>别急，正在加载呢</p>
         </div>
     </main>
     <footer>
